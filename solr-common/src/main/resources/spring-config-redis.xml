@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="
+          http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxActive" value="${jedisPool.maxActive}" />
+		<property name="maxIdle" value="${jedisPool.maxIdle}" />
+		<property name="minIdle" value="${jedisPool.minIdle}" />
+		<property name="maxWait" value="${jedisPool.maxWait}" />
+		<property name="testOnBorrow" value="${jedisPool.testOnBorrow}" />
+		<property name="testOnReturn" value="${jedisPool.testOnReturn}" />
+		<property name="whenExhaustedAction" value="${jedisPool.whenExhaustedAction}" />
+		<property name="timeBetweenEvictionRunsMillis"
+			value="${jedisPool.timeBetweenEvictionRunsMillis}" />
+		<property name="testWhileIdle" value="${jedisPool.testWhileIdle}" />
+		<property name="minEvictableIdleTimeMillis"
+			value="${jedisPool.minEvictableIdleTimeMillis}" />
+		<property name="softMinEvictableIdleTimeMillis"
+			value="${jedisPool.softMinEvictableIdleTimeMillis}" />
+		<property name="numTestsPerEvictionRun" value="${jedisPool.numTestsPerEvictionRun}" />
+
+	</bean>
+
+	<bean id="shard1" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" value="${jedisPool.shard1.host}" />
+		<constructor-arg index="1" type="int" value="${jedisPool.shard1.port}" />
+		<property name="password" value="${jedisPool.shard1.password}"/>
+	</bean>
+
+	<bean id="shardedJedisPool" class="redis.clients.jedis.ShardedJedisPool">
+		<constructor-arg index="0" ref="jedisPoolConfig" />
+		<constructor-arg index="1">
+			<list>
+				<ref bean="shard1" />
+			</list>
+		</constructor-arg>
+	</bean>
+</beans>

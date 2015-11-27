@@ -1,0 +1,24 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+  <allow>
+    <create creator="new" javascript="JDate">
+      <param name="class" value="java.util.Date"/>
+    </create>
+    <create creator="new" javascript="Demo">
+      <param name="class" value="org.myapp.common.model.report.ChartItem"/>
+    </create>
+    <create creator="spring" javascript="JavaSide">
+      <param name="beanName" value="chatService"/>
+    </create>
+    
+    <!-- chat 
+    <create creator="new" scope="application">
+      <param name="class" value="org.myapp.service.JavascriptChat"/>
+    </create>
+    <convert converter="bean" match="org.myapp.service.Message"/>
+    -->
+  </allow>
+</dwr>

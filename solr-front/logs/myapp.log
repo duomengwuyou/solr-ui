@@ -1,0 +1,134 @@
+2015-11-26 17:44:20 [main] INFO  [Server.java:271]
+				[]-jetty-7.6.11.v20130520
+2015-11-26 17:44:20 [main] INFO  [ContextHandler.java:1965]
+				[]-Initializing Spring root WebApplicationContext
+2015-11-26 17:44:20 [main] INFO  [ContextLoader.java:272]
+				[]-Root WebApplicationContext: initialization started
+2015-11-26 17:44:20 [main] INFO  [AbstractApplicationContext.java:513]
+				[]-Refreshing Root WebApplicationContext: startup date [Thu Nov 26 17:44:20 CST 2015]; root of context hierarchy
+2015-11-26 17:44:20 [main] INFO  [XmlBeanDefinitionReader.java:316]
+				[]-Loading XML bean definitions from class path resource [spring-config.xml]
+2015-11-26 17:44:20 [main] INFO  [XmlBeanDefinitionReader.java:316]
+				[]-Loading XML bean definitions from class path resource [spring-config-mybatis.xml]
+2015-11-26 17:44:20 [main] INFO  [XmlBeanDefinitionReader.java:316]
+				[]-Loading XML bean definitions from class path resource [spring-config-common.xml]
+2015-11-26 17:44:20 [main] INFO  [XmlBeanDefinitionReader.java:316]
+				[]-Loading XML bean definitions from class path resource [spring-config-bean.xml]
+2015-11-26 17:44:21 [main] INFO  [XmlBeanDefinitionReader.java:316]
+				[]-Loading XML bean definitions from class path resource [spring-config-redis.xml]
+2015-11-26 17:44:21 [main] INFO  [XmlBeanDefinitionReader.java:316]
+				[]-Loading XML bean definitions from class path resource [spring-config-mail.xml]
+2015-11-26 17:44:21 [main] INFO  [PropertiesLoaderSupport.java:172]
+				[]-Loading properties file from class path resource [resources.dev.properties]
+2015-11-26 17:44:22 [main] INFO  [DruidDataSource.java:642]
+				[]-{dataSource-1} inited
+2015-11-26 17:44:23 [main] INFO  [FreeMarkerConfigurer.java:127]
+				[]-ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2015-11-26 17:44:23 [main] INFO  [ContextLoader.java:312]
+				[]-Root WebApplicationContext: initialization completed in 2900 ms
+2015-11-26 17:44:23 [main] INFO  [ContextHandler.java:750]
+				[]-started o.e.j.w.WebAppContext{/,file:/Users/baidu/Documents/gitprojects/justtest/myapp-front/src/main/webapp/},src/main/webapp
+2015-11-26 17:44:23 [main] INFO  [StartupUtil.java:158]
+				[]-Starting: DwrServlet v3.0.0-FINAL on jetty/7.6.11.v20130520 / JDK 1.6.0_65 from Apple Inc. at 
+2015-11-26 17:44:23 [main] INFO  [StartupUtil.java:378]
+				[]-Starting: Using container abstraction org.directwebremoting.server.jetty.JettyContinuationContainerAbstraction
+2015-11-26 17:44:23 [main] INFO  [UrlProcessor.java:76]
+				[]-Probably not an issue: the url:/gi.js (org.directwebremoting.gi.GiHandler) Handler is not available. This is only an problem if you wanted to use it.
+2015-11-26 17:44:23 [main] INFO  [DefaultConverterManager.java:87]
+				[]-Probably not an issue: jsx3.net.URIResolver is not available so the jsx3uri converter will not load. This is only an problem if you wanted to use it.
+2015-11-26 17:44:23 [main] INFO  [DefaultConverterManager.java:87]
+				[]-Probably not an issue: jsx3.xml.CdfDocument is not available so the jsx3doc converter will not load. This is only an problem if you wanted to use it.
+2015-11-26 17:44:23 [main] INFO  [ContextHandler.java:1965]
+				[]-Initializing Spring FrameworkServlet 'spring'
+2015-11-26 17:44:23 [main] INFO  [FrameworkServlet.java:461]
+				[]-FrameworkServlet 'spring': initialization started
+2015-11-26 17:44:23 [main] INFO  [AbstractApplicationContext.java:513]
+				[]-Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Nov 26 17:44:23 CST 2015]; parent: Root WebApplicationContext
+2015-11-26 17:44:23 [main] INFO  [XmlBeanDefinitionReader.java:316]
+				[]-Loading XML bean definitions from class path resource [spring-mvc.xml]
+2015-11-26 17:44:23 [main] INFO  [DefaultListableBeanFactory.java:746]
+				[]-Overriding bean definition for bean 'mvcUriComponentsContributor': replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/toRegister],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.register(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/system],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.system(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.index(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/chat],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.chat(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/newsinfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.newsinfo(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/photo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.photo(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.alibaba.fastjson.JSONObject org.myapp.web.LoginController.register(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.alibaba.fastjson.JSONObject org.myapp.web.LoginController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/delUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.alibaba.fastjson.JSONObject org.myapp.web.LoginController.delUser(java.lang.String,java.lang.String)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/getAllUsers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.alibaba.fastjson.JSONObject org.myapp.web.LoginController.getAllUsers(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [Log4jLogger.java:53]
+				[]-HV000001: Hibernate Validator 5.0.2.Final
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/toRegister],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.register(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/system],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.system(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.index(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/chat],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.chat(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/newsinfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.newsinfo(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/photo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.ChatController.photo(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.alibaba.fastjson.JSONObject org.myapp.web.LoginController.register(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.myapp.web.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.alibaba.fastjson.JSONObject org.myapp.web.LoginController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/delUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.alibaba.fastjson.JSONObject org.myapp.web.LoginController.delUser(java.lang.String,java.lang.String)
+2015-11-26 17:44:24 [main] INFO  [AbstractHandlerMethodMapping.java:181]
+				[]-Mapped "{[/getAllUsers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.alibaba.fastjson.JSONObject org.myapp.web.LoginController.getAllUsers(javax.servlet.http.HttpServletRequest)
+2015-11-26 17:44:24 [main] INFO  [AbstractUrlHandlerMapping.java:315]
+				[]-Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-11-26 17:44:24 [main] INFO  [AbstractUrlHandlerMapping.java:315]
+				[]-Mapped URL path [/public/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-11-26 17:44:24 [main] INFO  [FrameworkServlet.java:480]
+				[]-FrameworkServlet 'spring': initialization completed in 1084 ms
+2015-11-26 17:44:24 [main] INFO  [AbstractConnector.java:338]
+				[]-Started SelectChannelConnector@0.0.0.0:8889
+2015-11-26 17:44:34 [qtp1609813596-28] INFO  [Interceptor.java:30]
+				[]-拦截器：/
+2015-11-26 17:44:34 [qtp1609813596-28] INFO  [Interceptor.java:30]
+				[]-拦截器：/jetty-dir.css
+2015-11-26 17:44:35 [qtp1609813596-26] INFO  [Interceptor.java:30]
+				[]-拦截器：/favicon.ico
+2015-11-26 17:44:41 [qtp1609813596-27] INFO  [Interceptor.java:30]
+				[]-拦截器：/
+2015-11-26 17:44:41 [qtp1609813596-30] INFO  [Interceptor.java:30]
+				[]-拦截器：/jetty-dir.css
+2015-11-26 17:44:48 [qtp1609813596-43] INFO  [Interceptor.java:30]
+				[]-拦截器：/
+2015-11-26 17:44:48 [qtp1609813596-44] INFO  [Interceptor.java:30]
+				[]-拦截器：/jetty-dir.css
+2015-11-26 17:44:53 [qtp1609813596-43] INFO  [Interceptor.java:30]
+				[]-拦截器：/index
+2015-11-26 17:47:17 [Thread-1] INFO  [ContextHandler.java:1965]
+				[]-Destroying Spring FrameworkServlet 'spring'
+2015-11-26 17:47:17 [Thread-1] INFO  [AbstractApplicationContext.java:873]
+				[]-Closing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Nov 26 17:44:23 CST 2015]; parent: Root WebApplicationContext
+2015-11-26 17:47:18 [Thread-1] INFO  [ContextHandler.java:1965]
+				[]-Closing Spring root WebApplicationContext
+2015-11-26 17:47:18 [Thread-1] INFO  [AbstractApplicationContext.java:873]
+				[]-Closing Root WebApplicationContext: startup date [Thu Nov 26 17:44:20 CST 2015]; root of context hierarchy
+2015-11-26 17:47:18 [Thread-1] INFO  [DruidDataSource.java:1253]
+				[]-{dataSource-1} closed
+2015-11-26 17:47:18 [Thread-1] INFO  [ELContextCleaner.java:63]
+				[]-javax.el.BeanELResolver purged
+2015-11-26 17:47:18 [Thread-1] INFO  [ContextHandler.java:801]
+				[]-stopped o.e.j.w.WebAppContext{/,file:/Users/baidu/Documents/gitprojects/justtest/myapp-front/src/main/webapp/},src/main/webapp
