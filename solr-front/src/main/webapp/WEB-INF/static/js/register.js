@@ -1,2 +1,2 @@
-/*! create by 2015-11-26*/ 
+/*! create by 2015-11-27*/ 
 $(function(){var a=$("#register_form");a.validate({focusInvalid:!0,rules:{userName:{required:!0},userPass:{required:!0},passAgain:{required:!0}},messages:{userName:{required:"需要填入用户名"},userPass:{required:"需要填入密码"},passAgain:{required:"需要填入核对密码"}},submitHandler:function(){return $.ajax({type:"POST",url:"/register",data:a.serialize(),beforeSend:function(){$("#register_form form button").attr("disabled","disabled")},success:function(a){a.status?bootbox.alert("注册成功",function(){window.location.href="/index"}):bootbox.alert(a.message)},error:function(){alert("网路错误！"),$("#register_form form button").removeAttr("disabled","disabled")}}),!1}})});

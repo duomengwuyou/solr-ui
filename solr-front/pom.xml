@@ -13,7 +13,7 @@
 	<artifactId>solr-front</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
-	<name>myapp-front Maven Webapp</name>
+	<name>solr-front Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<!-- 设置profiles -->
@@ -66,6 +66,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>myapp-front</finalName>
+		<finalName>solr-front</finalName>
 	</build>
 </project>

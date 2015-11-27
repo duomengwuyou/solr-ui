@@ -8,7 +8,7 @@
 	<version>0.0.1</version>
 	<packaging>pom</packaging>
 
-	<name>myapp-parent</name>
+	<name>solr-parent</name>
 	<url>http://maven.apache.org</url>
 
 	<repositories>
@@ -557,7 +557,7 @@
 	</build>
 
 	<modules>
-		<module>myapp-solrcommon</module>
-		<module>myapp-solrfront</module>
+		<module>solr-common</module>
+		<module>solr-front</module>
 	</modules>
 </project>

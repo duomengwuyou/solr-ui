@@ -11,7 +11,7 @@
 	<groupId>org.myapp</groupId>
 	<artifactId>solr-common</artifactId>
 	<version>0.0.1</version>
-	<name>myapp-common</name>
+	<name>solr-common</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

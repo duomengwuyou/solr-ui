@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         
         // 动态检测代码变化
 		watch : {
-			files : [ '<%=path.src%>/js/**/*.js','<%=path.src%>/css/**/*.css' ],
+			files : [ '<%=path.src%>/js/**/*.js','<%=path.src%>/css/**/*.css','<%=path.src%>/lib/**/*.js' ],
 			tasks : [ 'uglify', 'cssmin' ]
 		}
 		

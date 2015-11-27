@@ -2,14 +2,8 @@
 <link href="/public/css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
 <link href="/public/css/se7en-font.css" media="all" rel="stylesheet" type="text/css">
 <link href="/public/css/isotope.css" media="all" rel="stylesheet" type="text/css">
-<link href="/public/css/jquery.fancybox.css" media="all" rel="stylesheet" type="text/css">
-<link href="/public/css/fullcalendar.css" media="all" rel="stylesheet" type="text/css">
 <link href="/public/css/wizard.css" media="all" rel="stylesheet" type="text/css">
 <link href="/public/css/select2.css" media="all" rel="stylesheet" type="text/css">
-<link href="/public/css/morris.css" media="all" rel="stylesheet" type="text/css">
-<link href="/public/css/datatables.css" media="all" rel="stylesheet" type="text/css">
-<link href="/public/css/datepicker.css" media="all" rel="stylesheet" type="text/css">
-<link href="/public/css/timepicker.css" media="all" rel="stylesheet" type="text/css">
 <link href="/public/css/colorpicker.css" media="all" rel="stylesheet" type="text/css">
 <link href="/public/css/bootstrap-switch.css" media="all" rel="stylesheet" type="text/css">
 <link href="/public/css/daterange-picker.css" media="all" rel="stylesheet" type="text/css">
@@ -62,7 +56,7 @@
 <script src="/public/lib/fitvids.js" type="text/javascript"></script>
 <script src="/public/lib/jquery.sparkline.min.js" type="text/javascript"></script>
 <script src="/public/lib/main.js" type="text/javascript"></script>
-<script src="/public/lib/respond.js" type="text/javascript"></script>
+<script type='text/javascript' src='/public/lib/bootbox.js'></script>
 
 <script type="text/javascript" src="/public/lib/jquery.validate.min.js"></script>
 <script type="text/javascript" src="/public/lib/jquery.tablesorter.min.js"></script>
@@ -71,6 +65,3 @@
 <script type="text/javascript" src="/public/lib/date.js"></script>
 
 <script type="text/javascript" src="/public/js/js.js"></script>
-
-<script type='text/javascript' src='/dwr/engine.js'></script>
-<script type='text/javascript' src='/dwr/util.js'></script>
